@@ -18,7 +18,6 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
-    binding.pry
     @event = Event.new(event_params)
 
     if @event.save
